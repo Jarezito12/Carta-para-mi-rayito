@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Para ti</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:#171414;color:#2b2726;font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+.page{width:min(94%,720px);margin:auto;padding:34px 0 60px}
+.intro{text-align:center;color:#e9dfd8;margin-bottom:30px}
+.intro h1{margin:0;font-size:clamp(29px,8vw,48px);font-weight:normal;letter-spacing:.02em}
+.intro p{margin:9px 0 0;font-size:clamp(15px,4vw,18px);color:#b9aaa1;font-style:italic}
+.envelope{position:relative;display:block;width:100%;max-width:650px;height:255px;margin:auto;padding:0;border:0;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.env-body{position:absolute;left:0;right:0;bottom:0;height:205px;border-radius:10px 10px 18px 18px;background:linear-gradient(145deg,#8b554f,#593734);box-shadow:0 18px 45px #0009}
+.flap{position:absolute;z-index:5;top:0;left:0;right:0;margin:auto;width:0;height:0;border-left:calc(min(46vw,325px)) solid transparent;border-right:calc(min(46vw,325px)) solid transparent;border-top:135px solid #a66b62;transform-origin:top center;transition:transform .8s ease}
+.paper{position:absolute;z-index:3;left:5%;right:5%;top:35px;height:175px;background:#f5eee4;border-radius:5px;padding:32px 20px;color:#493d38;font-size:clamp(17px,4.5vw,21px);box-shadow:0 5px 18px #0004;transition:transform .8s ease,height .8s ease}
+.open .flap{transform:rotateX(180deg)}
+.open .paper{transform:translateY(-112px);height:220px}
+.tap{text-align:center;margin:3px 0 25px;color:#a99b93;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.letter{display:none;width:100%;max-width:650px;margin:auto;padding:42px clamp(23px,7vw,58px) 50px;background:#f5eee4;border:1px solid #cdb9aa;border-radius:5px;box-shadow:0 20px 55px #0008;line-height:1.72;font-size:clamp(18px,4.7vw,23px);color:#332d2a}
+.letter.show{display:block;animation:appear .7s ease}
+@keyframes appear{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.rule{text-align:center;color:#94766d;margin:12px 0 28px;font-size:18px;letter-spacing:5px}
+.letter h2{margin:0 0 27px;text-align:center;font-size:clamp(23px,6vw,31px);font-weight:normal;letter-spacing:.03em}
+.letter p{margin:0 0 27px}
+.no{margin-bottom:10px!important;font-weight:bold;font-size:1.1em}
+.emphasis{font-style:italic}
+.final{text-align:center;margin-top:34px;color:#684c45}
+.signature{text-align:center;margin-top:34px;font-size:.9em;color:#80675f;font-style:italic}
+.wish{font-style:italic;color:#594641}
+@media(max-width:480px){.page{padding-top:27px}.envelope{height:230px}.env-body{height:185px}.flap{border-top-width:120px}.paper{font-size:17px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main class="page">
+<section class="intro">
+<h1>Para mi rayito de sol 🧡</h1>
+<p>mi alpinito, mi mona 🧡</p>
+</section>
+
+<button class="envelope" id="envelope" type="button" aria-label="Abrir carta">
+<div class="paper">Hay algo que quería decirte…</div>
+<div class="flap"></div>
+<div class="env-body"></div>
+</button>
+
+<div class="tap">Toca el sobre para abrir la carta</div>
+
+<article class="letter" id="letter">
+<div class="rule">—  ♡  —</div>
+<h2>Para ti</h2>
+
+<p class="no">No.</p>
+
+<p>No es que no pueda vivir sin ti;<br>es que ni siquiera lo quiero intentar.</p>
+
+<p>No es que no pueda,<br>es que no quiero dejarnos ir.</p>
+
+<div class="rule">—  ♡  —</div>
+
+<p>Perdóname si después de todo lo que me has pedido, sigo esperando que vuelvas conmigo, a pesar de que no quieras, pero que sepas que eres mi monita linda.</p>
+
+<p class="wish">Desearía que me llamaras esta madrugada, solo para recordarme que me amas, que me extrañas y que no te quieres alejar.</p>
+
+<p class="wish">Desearía que vinieras a abrazarme como lo hacías.</p>
+
+<p class="wish">Desearía que me besaras y no te separaras de mi lado jamás.</p>
+
+<p class="wish">Desearía dejarte ir, dejar de soñarte, porque los sueños no son más que solo eso... ¿verdad?</p>
+
+<div class="rule">—  ♡  —</div>
+
+<p>Si me lo preguntan, le diría a todos que no vale la pena esperar tanto tiempo a una persona, pero te veo y te pienso y me doy cuenta de que a ti te esperaría toda mi vida.</p>
+
+<p>No puedo obligarte a suspirar por mí...</p>
+
+<div class="rule">—  ♡  —</div>
+
+<p class="final emphasis">Ningún hombre se rinde con la mujer que realmente ama.</p>
+
+<p class="final emphasis">Y si tú te rindes...</p>
+
+<p class="final emphasis">Ningún hombre se rinde con la mujer que <strong>REALMENTE AMA.</strong></p>
+
+<p>Pero te juro que, si decides regresar, aquí estaré sosteniendo tu nombre en mi boca.</p>
+
+<div class="rule">—  ♡  —</div>
+
+<p class="final emphasis">Y esta vez, te prometo<br>que esta vez,<br>sí sabré cómo amarte.</p>
+
+<p class="signature">Siempre,<br>mi rayito de sol, mi alpinito, mi mona 🧡.</p>
+</article>
+</main>
+
+<script>
+const envelope=document.getElementById("envelope");
+const letter=document.getElementById("letter");
+envelope.addEventListener("click",()=>{
+ envelope.classList.add("open");
+ setTimeout(()=>{
+   letter.classList.add("show");
+   letter.scrollIntoView({behavior:"smooth",block:"start"});
+ },650);
+});
+</script>
+</body>
+</html>
